@@ -1,0 +1,75 @@
+  body {
+  margin: 0;
+}
+
+
+/* Barra do topo do Site e Navegacao */
+.containerGeral {
+  background-color: #282a36;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 100px;
+  background-color: #44475a;
+  display: flex;
+  align-items: center;
+}
+
+.containerLogo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.containerNav {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+#navegacao {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  display: inherit;
+  justify-content: space-evenly;
+}
+
+#tituloSite {
+  color: #f8f8f2;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.opcaoNav {
+  width: 160px;
+  height: 40px;
+  background-color: #ff5555;
+  font-weight: 800;
+  color: #f8f8f2;
+}
+
+/* Corpo do site */
+.containerMainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.noticia {
+  width: 65%;
+  height: 800px;
+  margin-top: 10vh;
+  background-color: #6272a4;
+}
+
+
+/* Footer da Pagina */
+.footerDaPagina {
+  display: flex;
+  height: 150px;
+  margin-top: 50px;
+  background-color: #609fad;
+}

@@ -1,0 +1,55 @@
+/* Reset de margin */
+body {
+  margin: 0;
+  background-color: #003566;
+}
+
+.display {
+  background-color: #264653;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.display > div {
+  width: 100px;
+  height: 50%;
+  background-color: #2A9D8F;
+}
+.evenly {
+  justify-content: space-evenly;
+}
+.around {
+  justify-content: space-around;
+}
+.between {
+  justify-content: space-between;
+}
+
+.containerCentral {
+  height: 700px;
+  background-color: #F4A261;
+  position: relative;
+}
+.filhoCentralUm, .filhoCentralDois {
+  background-color: #E76F51;
+  height: 50%;
+  width: 50%;
+}
+#filhoParaDireita {
+  float: right;
+}
+
+#divAbsoluta {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background-color: #e9c56a8b;
+  border: 3px solid black;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+
+}

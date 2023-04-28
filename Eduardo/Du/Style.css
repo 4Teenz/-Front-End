@@ -1,0 +1,72 @@
+body {
+    margin: 0%;
+}
+
+.osite {
+    background-color:darkblue;
+}
+
+.otaldoheader {
+    width: 100%;
+    height: 100px;
+    background-color:midnightblue ;
+    display: flex;
+    align-items: center;
+}
+
+.ologo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.otaldonav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#navegacao {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    display: inherit;
+    justify-content: space-evenly;
+}
+
+#titulodosite {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    background-color: midnightblue;
+    font-weight: 800;
+    color: white;
+}
+
+.essamainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    width: 65%;
+    height: 800px;
+    margin-top: 10vh;
+    background-color: gray;
+}
+
+.footerpagina {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: midnightblue;
+}

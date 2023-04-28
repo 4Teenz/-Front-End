@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.display {
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    background-color: darkviolet;
+}
+
+.display > div {
+    height: 30px;
+    width: 50px;
+    background-color: white;
+}
+
+.eve {
+    justify-content: space-evenly;
+}
+
+.aro {
+    justify-content: space-around;
+}
+
+.bet {
+    justify-content: space-between;
+}
+
+.balancogeral {
+    width: 200vh;
+    height: 30vw ;
+    position: relative;
+    background-color: #7a7876;
+}
+
+.fidogeral , .fidogeral2 {
+    background-color: #b4aeac;
+    width: 50%;
+    height: 50%;
+}
+
+#fipradireita {
+    float: right;
+}
+
+#absolute {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.452) ;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid black;
+}

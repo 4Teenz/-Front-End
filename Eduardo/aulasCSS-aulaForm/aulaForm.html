@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Formulario</title>
+
+  <!-- Para alterarmos o icone de nossa pagina utilizamos a mesma tag LINK, mas com o valor do atributo rel sendo "icon" -->
+  <!-- Vale lembrar que para icones por padrão utiliza-se medidas de 16x16 ou 32x32 pixels -->
+  <link rel="icon" href="./Assets/journal-text.png">
+  
+  <link rel="stylesheet" href="./Styles/stylesPadrao.css">
+  <link rel="stylesheet" href="./Styles/formStyle.css">
+
+  <script src="./Scripts/formScript.js" defer></script>
+</head>
+<body>
+  <main id="containerForm">
+    <h1>Formulario</h1>
+    <form id=formulario>
+
+      <!-- Entrada do tipo texto. Uma entrada padrão para qualquer tipo de texto -->
+      <div class="d-flex padding" >
+        <label for="iptNomeUsuario">Nome de usuario:</label>
+        <input id="iptNomeUsuario" type="text" name="iptNomeUsuario">
+      </div>
+
+      <!-- Entrada do tipo senha. Esconde os caracteres e tbm possui o opcao de visibilidade -->
+      <div class="d-flex padding" >
+        <label for="iptSenha">Senha:</label>
+        <input id="iptSenha" type="password" name="iptSenha">
+      </div>
+
+      <!-- Entrada do tipo email. Esse campo valida a estrutura para o formato de email. É recomendado mesmo que exista essa validação no HTML, realizar ela em sua aplicacao tbm -->
+      <div class="d-flex padding" >
+        <label for="iptEmail">Email:</label>
+        <input id="iptEmail" type="email" name="iptEmail">
+      </div>
+
+      <!-- Entrada do tipo Data. Para o usuario selecionar uma data, este campo vem com o padrao de data do sistema do usuario -->
+      <div class="d-flex padding" >
+        <label for="iptData">Data:</label>
+        <input id="iptData" type="date" name="iptData">
+      </div>
+
+      <!-- Entrada do tipo arquivo. Precisa de tratamento da aplicacao para receber o arquivo e tbm precisamos usar JS para tratar o tipo de arquivo que queremos permitir -->
+      <div class="d-flex padding" >
+        <label for="iptArquivo">Arquivo:</label>
+        <input id="iptArquivo" type="file" name="iptArquivo">
+      </div>
+
+      <!-- Entrada do tipo checkbox. IDs diferentes e name igual. O valor passado é o valor definido dentro da tag value -->
+      <div class="d-flex flexCenter padding" >
+        <div>
+          <label for="iptCheckbox1">Check 1:</label>
+          <input id="iptCheckbox1" type="checkbox" value="1" name="grupoCheckbox">
+  
+          <label for="iptCheckbox2">Check 2:</label>
+          <input id="iptCheckbox2" type="checkbox" value="2" name="grupoCheckbox">
+  
+          <label for="iptCheckbox3">Check 3:</label>
+          <input id="iptCheckbox3" type="checkbox" value="3" name="grupoCheckbox">
+        </div>
+      </div>
+
+      <!-- Entrada do tipo radio. Essa entrada tem um comportamento parecido com checkbox, mas tendo o mesmo valor em "name" só podemos selecionar um por vez -->
+      <div class="d-flex flexCenter padding" >
+        <div>
+          <label for="iptRadio1">Radio 1:</label>
+          <input id="iptRadio1" type="radio" value="1" name="grupoRadio">
+  
+          <label for="iptRadio2">Radio 2:</label>
+          <input id="iptRadio2" type="radio" value="2" name="grupoRadio">
+  
+          <label for="iptRadio3">Radio 3:</label>
+          <input id="iptRadio3" type="radio" value="3" name="grupoRadio">
+        </div>
+      </div>
+
+      <!-- Textarea nn é um input necessariamente. Ele é utilizado para entrada de textos longos -->
+      <div class="d-flex padding" >
+        <label for="txtAreaObservacao">Observacao:</label>
+        <textarea id="txtAreaObservacao" rows="7" name="txtAreaObservacao"></textarea>
+      </div>
+
+      <div id="containerBtns">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar campos</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

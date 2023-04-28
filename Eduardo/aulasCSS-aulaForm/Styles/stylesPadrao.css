@@ -1,0 +1,30 @@
+/* Variaveis CSS */
+:root {
+  --corPrincipal: #001833;
+  --corSecundaria: #001D3D;
+  --corTercearia: #ffc300;
+  --corBorda: #0c54b3;
+}
+.border {
+  border: 1px solid red;
+}
+.d-flex {
+  display: flex;
+}
+.flexCenter {
+  justify-content: center;
+}
+
+.padding {
+  padding: 25px 35px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  /* Atributo que é herdado */
+  color: #DCDCDC;                                  /* Atributo que é herdado */
+  background-color: var(--corPrincipal);             /* Utilizamos var(--nomeVariavel) para chamar a variavel declarada na root */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 8vh;
+}
